@@ -2,6 +2,8 @@
 
 Published in [Chemistry-informed molecular graph as reaction descriptor for machine-learned retrosynthesis planning](https://www.pnas.org/doi/10.1073/pnas.2212711119)
 
+Code is available at [Github](https://github.com/zbc0315/cimg_desc)
+
 ## 1. Installation
 
 ### 1.1. Install RDKit
