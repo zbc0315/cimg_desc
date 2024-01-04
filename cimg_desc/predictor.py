@@ -4,7 +4,7 @@
 # @Author  : zhangbc0315@outlook.com
 # @File    : predictor.py
 # @Software: PyCharm
-import importlib.resources
+import importlib_resources as resources
 import torch
 
 from cimg_desc.handler import Handler
@@ -17,7 +17,7 @@ class Predictor:
         self.model = Net()
         self.handler = Handler()
         self.model.eval()
-        self.model.load_state_dict(torch.load(importlib.resources.files('cimg_desc').joinpath('cimg_desc/retro_rcts_199.pt'),
+        self.model.load_state_dict(torch.load(resources.files('cimg_desc').joinpath('retro_rcts_199.pt'),
                                               map_location=torch.device(device))['model'])
 
     def predict(self, smiles: str):
